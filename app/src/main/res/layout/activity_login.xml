@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="LOGIN "
+            android:layout_marginTop="40dp"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/lg"></ImageView>
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn2"
+            android:drawablePadding="8dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/white"
+            android:textStyle="normal"></EditText>
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn2"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword|textNoSuggestions"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/white"
+            android:textStyle="normal"></EditText>
+
+
+
+
+        <Button
+            android:id="@+id/SignIn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn3"
+            android:onClick="goToActivityC"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:cornerRadius="20dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="#3FFF" />
+
+        <Button
+            android:id="@+id/LogBtn"
+            android:layout_width="268dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@android:drawable/divider_horizontal_dark"
+            android:onClick="goToActivityC"
+            android:text="Don't have account? Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/PasswordResetBtn"
+            android:layout_width="145dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/divider_horizontal_dark"
+            android:onClick="goToActivityC"
+            android:text="Forgot Password"
+            android:textAllCaps="false"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:cornerRadius="20dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.ui.settings.settingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <!-- First Column (60%) -->
+        <LinearLayout
+            android:id="@+id/firstColumn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <!-- Wrap the TextViews in a vertical LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <!-- First Heading -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="05dp"
+                    android:background="@color/material_dynamic_neutral50" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Review your Prefrences"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/material_dynamic_neutral50" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Show distance in"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/btn6"
+                    android:orientation="horizontal">
+
+                    <!-- Add the first white button -->
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/btn7"
+                        android:text="Miles" />
+
+                    <!-- Add the second white button -->
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/btn7"
+                        android:text="Kilometes" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/material_dynamic_neutral50" />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Distance Willing to travel "
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    />
+
+                <SeekBar
+                    android:id="@+id/distanceSeekBar"
+                    android:layout_width="320dp"
+                    android:layout_height="5dp"
+                    android:max="50"
+                    android:layout_marginLeft="20dp"
+                    android:progress="0"
+                    android:foreground="#105359"
+                    android:layout_margin="16dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/material_dynamic_neutral50" />
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Species name display"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/btn6"
+                    android:orientation="horizontal">
+                    <!-- Add the first white button -->
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/btn7"
+                        android:text="Common" />
+
+                    <!-- Add the second white button -->
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/btn7"
+                        android:text="Scientific" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@color/material_dynamic_neutral50" />
+
+
+    <Button
+        android:id="@+id/SignIn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn"
+        android:onClick="goToActivityC"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>

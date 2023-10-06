@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#105359"
+        android:text="Species"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_margin="10dp"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Column 1 (ImageViews) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/bird"
+                android:contentDescription="Image 1" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/dove"
+                android:contentDescription="Image 2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dove"
+                android:contentDescription="Image 2" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dove"
+                android:contentDescription="Image 2" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/dove"
+                android:contentDescription="Image 2" />
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/dove"
+                android:contentDescription="Image 2" />
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dove"
+                android:contentDescription="Image 2" />
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/dove"
+                android:contentDescription="Image 2" />
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dove"
+                android:contentDescription="Image 2" />
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/dove"
+                android:contentDescription="Image 2" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/dove"
+                android:contentDescription="Image 2" />
+
+
+            <!-- Add more ImageViews for Column 1 as needed -->
+        </LinearLayout>
+
+        <!-- Column 2 (Buttons) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/but3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Accentors" />
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="African  Parrots" />
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Albatrosses" />
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Anhingas" />
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Auks" />
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Accentors" />
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Accentors" />
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Accentors" />
+
+            <Button
+                android:id="@+id/b10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Accentors" />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Accentors" />
+            <Button
+                android:id="@+id/b11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Accentors" />
+            <Button
+                android:id="@+id/b12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Accentors" />
+            <Button
+                android:id="@+id/b13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Accentors" />
+            <Button
+                android:id="@+id/b14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Accentors" />
+
+
+            <!-- Add more buttons for Column 2 as needed -->
+        </LinearLayout>
+
+        <!-- Column 3 (Buttons) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button111"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/button555"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/button578"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/button55768"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/button590"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/button5234"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/button533"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/button509"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/button500"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/y345"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/btton578"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+            <ImageButton
+                android:id="@+id/but5"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+
+            <ImageButton
+                android:id="@+id/but"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_volume_up_24"
+                android:background="@color/white" />
+
+            <!-- Add more buttons for Column 3 as needed -->
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

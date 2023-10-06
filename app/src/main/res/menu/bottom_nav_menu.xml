@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_Hotspot"
+        android:icon="@drawable/baseline_search_24"
+        android:title="Hotspots" />
+
+    <item
+        android:id="@+id/navigation_Sightings"
+        android:icon="@drawable/baseline_camera_alt_24"
+        android:title="Sightings" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings" />
+
+
+</menu>

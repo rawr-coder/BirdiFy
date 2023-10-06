@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".AddSightings">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <!-- First Column (60%) -->
+        <LinearLayout
+            android:id="@+id/firstColumn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <!-- Wrap the TextViews in a vertical LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <!-- First Heading -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="05dp"
+                    android:background="@color/material_dynamic_neutral50" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Add Sightings"
+                    android:textColor="@color/black"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/material_dynamic_neutral50" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Bird Name:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="208dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/btn2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="76dp"
+                    android:ems="10"
+                    android:inputType="textPersonName">
+
+                </EditText>
+
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/material_dynamic_neutral50" />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Location "
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="208dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/btn2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="76dp"
+                    android:ems="10"
+                    android:inputType="textPersonName">
+
+                </EditText>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/material_dynamic_neutral50" />
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Image:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginStart="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonOpenGallery"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="openGallery"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/btn2"
+                        android:text="Open Gallery" />
+
+                    <Button
+                        android:id="@+id/buttonTakePicture"
+                        android:layout_width="150dp"
+                        android:background="@drawable/btn2"
+                        android:layout_height="wrap_content"
+                        android:onClick="takePicture"
+                        android:text="Take Picture" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@color/material_dynamic_neutral50" />
+
+
+    <Button
+        android:id="@+id/SignIn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn"
+        android:onClick="goToActivityC"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>

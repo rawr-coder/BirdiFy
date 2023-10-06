@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/spe"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".splashscreen2">
+
+    <!-- Use a weight to push content to the top -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <!-- Spacer to push content to the top -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" />
+
+    <TextView
+        android:id="@+id/haedig1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sans-serif"
+        android:text="Welcome to"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:transitionName="logo_text" />
+
+    <TextView
+        android:id="@+id/trworld_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sans-serif"
+        android:text="Birdify"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:transitionName="logo_text" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/trickyworld_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sans-serif"
+        android:text="your gateway to the enchanting world of birdsong and ornithology"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:transitionName="logo_text" />
+
+        <Button
+            android:id="@+id/button"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Get Started"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="goToActivityB"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_text" />
+
+    <!-- Spacer to push content to the top -->
+        <TextView
+            android:id="@+id/trickyworld_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Already have an Account? Login in"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="logo_text" />
+    </LinearLayout>
+</LinearLayout>
