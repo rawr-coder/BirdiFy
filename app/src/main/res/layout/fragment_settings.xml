@@ -66,34 +66,53 @@
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
-
-
-                <LinearLayout
-
-                    android:layout_width="350dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="left"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:gravity="center"
-                    android:background="@drawable/btn6"
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
                     android:orientation="horizontal">
 
-                    <!-- Add the first white button -->
+                    <RadioButton
+                        android:id="@+id/radio_metric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Metric"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radio_imperial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Imperial" />
+                </RadioGroup>
+
+
+                <!--   <LinearLayout
+
+                     android:layout_width="350dp"
+                     android:layout_height="60dp"
+                     android:layout_gravity="left"
+                     android:layout_marginStart="20dp"
+                     android:layout_marginTop="20dp"
+                     android:gravity="center"
+                     android:background="@drawable/btn6"
+                     android:orientation="horizontal">
+
+
                     <Button
                         android:layout_width="100dp"
                         android:layout_height="45dp"
                         android:background="@drawable/btn7"
                         android:text="Miles" />
 
-                    <!-- Add the second white button -->
+
                     <Button
                         android:layout_width="100dp"
                         android:layout_height="45dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/btn7"
                         android:text="Kilometes" />
-                </LinearLayout>
+                </LinearLayout> -->
 
                 <View
                     android:layout_width="match_parent"
