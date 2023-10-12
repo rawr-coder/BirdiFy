@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628825480557",
+    "project_id": "birdify-vc",
+    "storage_bucket": "birdify-vc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628825480557:android:970c6dfda096bb34144e64",
+        "android_client_info": {
+          "package_name": "com.example.birdify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl9laIIzX19IqncL7driwcUG3dIxBpxiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
